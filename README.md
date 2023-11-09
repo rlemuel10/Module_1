@@ -10,19 +10,20 @@ Upon completing each of these operations, the new number will be added to memory
 
 ## Installation
 
-Use the package manager [pip] (https://test.pypi.org/project/calculator-package-LR/0.0.1/) to install calculator
+Use the package manager [pip] (pip install -i https://test.pypi.org/simple/ calculator-package-rlemuel10==0.0.3) to install calculator
 
 ```bash
-pip install pip install -i https://test.pypi.org/simple/ calculator-package-LR==0.0.1
+pip install -i https://test.pypi.org/simple/ calculator-package-rlemuel10==0.0.3
 ```
 
 ## Usage
 
 ```python
-from calculator import calculator
+# Import module
+from calculator_package_rlemuel10 import calculator
 
 #initializes Calculator class. Defaults to zero, any number can be an arg
-instance=Calculator()
+instance=calculator.Calculator()
 
 # returns sum when given integer/float n
 instance.add(n)
