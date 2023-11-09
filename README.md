@@ -10,7 +10,7 @@ Upon completing each of these operations, the new number will be added to memory
 
 ## Installation
 
-Use the package manager [pip] (pip install -i https://test.pypi.org/simple/ calculator-package-rlemuel10==0.0.3) to install calculator
+Package can be found at https://test.pypi.org/simple/calculator-package-rlemuel10==0.0.3 and installed via pip install
 
 ```bash
 pip install -i https://test.pypi.org/simple/ calculator-package-rlemuel10==0.0.3
