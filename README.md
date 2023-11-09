@@ -8,31 +8,39 @@ This project creates a 5-function calculator, which can add, subtract, multiply,
 The calculator module can be initialized either with a number in memory, or zero as the default value. From there, each of of its methods can be called in order to add, subtract, multiply, or take the root of the number in memory. 
 Upon completing each of these operations, the new number will be added to memory. If you'd like to clear the calculator's memory to start over with new numbers, you can simply use the reset_memory method and do whichever operations you choose. 
 
-## How to install and run Calculator
-If you are working on a project that a user needs to install or run locally in a machine like a "POS", you should include the steps required to install your project and also the required dependencies if any.
-
-Provide a step-by-step description of how to get the development environment set and running.
-
-
-
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Package can be found at https://test.pypi.org/simple/calculator-package-rlemuel10==0.0.3 and installed via pip install
 
 ```bash
-pip install foobar
+pip install -i https://test.pypi.org/simple/ calculator-package-rlemuel10==0.0.3
 ```
 
 ## Usage
 
 ```python
-import foobar
+# Import module
+from calculator_package_rlemuel10 import calculator
 
-# returns 'words'
-foobar.pluralize('word')
+#initializes Calculator class. Defaults to zero, any number can be an arg
+instance=calculator.Calculator()
 
-# returns 'geese'
-foobar.pluralize('goose')
+# returns sum when given integer/float n
+instance.add(n)
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+# returns difference when given integer/float n
+instance.subtract(n)
+
+# returns multiplication when given integer/float n 
+instance.multiply(n)
+
+#returns division when given when given integer/float n
+instance.divide(n)
+
+#returns n-th root when given when given integer/float n
+instance.root(n)
+
+#resets number in memory from last calculation
+instance.reset_memory()
+
+ 
